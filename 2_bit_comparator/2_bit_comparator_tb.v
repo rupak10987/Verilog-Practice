@@ -5,6 +5,8 @@ wire out;
 two_bit_comparator uut
 (.A(a), .B(b), .O(out));
 initial begin
+    $dumpfile("test.vcd");
+    $dumpvars(0, two_bit_comparator_tb);
     a=2'b00;
     b=2'b00;
     #40;
@@ -17,7 +19,7 @@ initial begin
     a=2'b01;
     b=2'b01;
     #40;
-    $stop;
+    $finish;
 end
 initial begin
     $monitor("i0 = %2b, i1 = %2b || eq = %b",a,b,out);
