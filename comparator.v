@@ -1,6 +1,6 @@
 module comparator (
-    input wire i0;
-    input wire i1;
+    input wire i0,
+    input wire i1,
     output wire eq
 );
 //product terms
