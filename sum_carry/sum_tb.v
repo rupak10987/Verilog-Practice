@@ -1,18 +1,19 @@
 `timescale 1ns/1ps
 module sum_tb;
-reg[3:0] A,B;
-wire[3:0]O;
+localparam N=8;
+reg[N-1:0] A,B;
+wire[N-1:0]O;
 wire[1:0]C;
-sum uut(.A(A),.B(B),.sum(O),.carry(C));
+sum #(.N(N-1)) sum1(.A(A),.B(B),.sum(O),.carry(C));
 initial begin
-    A=4'b0011;
-    B=4'b1100;
+    A=8'b0011_0000;
+    B=8'b1100_0000;
     #40;
-    A=4'b1111;
-    B=4'b1000;
+    A=8'b1111_0000;
+    B=8'b1000_0000;
     #40;
-    A=4'b1111;
-    B=4'b1111;
+    A=8'b1111_0000;
+    B=8'b1111_0000;
     #40;
     $finish;
 end

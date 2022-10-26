@@ -1,0 +1,48 @@
+$date
+	Wed Oct 26 18:23:29 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module shifter_tb $end
+$var wire 4 ! O [3:0] $end
+$var reg 4 " I [3:0] $end
+$var reg 2 # S [1:0] $end
+$scope module uut $end
+$var wire 4 $ I [3:0] $end
+$var wire 2 % S [1:0] $end
+$var reg 4 & O [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b11 &
+b0 %
+b11 $
+b0 #
+b11 "
+b11 !
+$end
+#40000
+b110 !
+b110 &
+b1 #
+b1 %
+#80000
+b1100 !
+b1100 &
+b10 #
+b10 %
+#120000
+b11 !
+b11 &
+b11 #
+b11 %
+#160000
