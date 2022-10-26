@@ -9,10 +9,10 @@ module DFF
 );
 
 reg[N-1:0] reg_set[2**w-1:0];
-always @(posedge clk)
+always @(clk)
 begin
 if(wen==1'b1)
 reg_set[Wr_addr]<=d;
-q<=reg_set[read_addr];    
+assign q=reg_set[read_addr];    
 end
 endmodule

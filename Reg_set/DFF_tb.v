@@ -12,7 +12,7 @@ DFF #(.N(N),.w(w))uut(.clk(clk),.d(d),.q(q),.Wr_addr(Wr_addr),.read_addr(read_ad
 always
 begin
     clk=~clk;
-    #10;
+    #20;
 end
 initial begin
     $dumpfile("DFF.vcd");
