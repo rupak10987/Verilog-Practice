@@ -19,7 +19,7 @@ initial begin
     #40;
     S=2'b11;
     #40;
-    $finish
+    $finish;
 end
 initial begin
     $monitor("I1=%4b, I2=%4b, I3=%4b, I4=%4b || S=%2b ||| O=%4b",I1,I2,I3,I4,S,O);
