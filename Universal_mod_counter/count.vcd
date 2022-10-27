@@ -1,0 +1,160 @@
+$date
+	Thu Oct 27 19:31:21 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module counter_tb $end
+$var wire 8 ! out [7:0] $end
+$var parameter 32 " M $end
+$var parameter 32 # N $end
+$var reg 1 $ clk $end
+$var reg 1 % en $end
+$var reg 1 & reset $end
+$var reg 8 ' start [7:0] $end
+$var reg 1 ( up $end
+$scope module circuit1 $end
+$var wire 1 $ clk $end
+$var wire 1 % en $end
+$var wire 1 & reset $end
+$var wire 8 ) start [7:0] $end
+$var wire 1 ( up $end
+$var parameter 32 * M $end
+$var parameter 32 + N $end
+$var reg 8 , out [7:0] $end
+$var reg 8 - r_next [7:0] $end
+$var reg 8 . r_reg [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 +
+b1100100 *
+b1000 #
+b1100100 "
+$end
+#0
+$dumpvars
+b0 .
+b111 -
+b0 ,
+b111 )
+0(
+b111 '
+1&
+0%
+0$
+b0 !
+$end
+#20000
+1$
+#40000
+0$
+0&
+#60000
+b111 !
+b111 ,
+b111 .
+1$
+#80000
+b110 -
+0$
+1%
+#100000
+b110 !
+b110 ,
+b101 -
+b110 .
+1$
+#120000
+0$
+#140000
+b101 !
+b101 ,
+b100 -
+b101 .
+1$
+#160000
+0$
+#180000
+b100 !
+b100 ,
+b11 -
+b100 .
+1$
+#200000
+0$
+#220000
+b11 !
+b11 ,
+b10 -
+b11 .
+1$
+#240000
+0$
+#260000
+b10 !
+b10 ,
+b1 -
+b10 .
+1$
+#280000
+0$
+#300000
+b1 !
+b1 ,
+b0 -
+b1 .
+1$
+#320000
+0$
+#340000
+b0 !
+b0 ,
+b111 -
+b0 .
+1$
+#360000
+0$
+#380000
+b111 !
+b111 ,
+b110 -
+b111 .
+1$
+#400000
+0$
+#420000
+b110 !
+b110 ,
+b101 -
+b110 .
+1$
+#440000
+0$
+#460000
+b101 !
+b101 ,
+b100 -
+b101 .
+1$
+#480000
+0$
+#500000
+b100 !
+b100 ,
+b11 -
+b100 .
+1$
+#520000
+0$
+#540000
+b11 !
+b11 ,
+b10 -
+b11 .
+1$
