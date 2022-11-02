@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 module tri_tb;
-reg[3:0]b;
+inout reg[3:0]b;
 reg[3:0]s_in;
 reg oe;
 wire[3:0]s_out;
@@ -13,9 +13,9 @@ initial begin
     b=4'b1111;
     #40;
     oe=0;
-    b=4'b1111;
+    b=4'bzzzz;
     #40;
-    b=4'b0011;
+    b=4'bzzzz;
     #40;
     $finish;
 end
