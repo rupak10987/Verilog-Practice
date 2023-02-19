@@ -1,16 +1,31 @@
 `timescale 1ns/1ps
 module mul_tb;
-reg[3:0]I1,I2,I3,I4;
-reg[1:0]S;
-wire[3:0]O;
-mul uut(.I1(I1),.I2(I2),.I3(I3),.I4(I4),.O(O),.S(S));
+wire[3:0]I1,I2,I3,I4,I5,I6,I7,I8,I9,I10,I11,I12,I13,I14,I15,I16;
+reg[3:0]S;
+reg[3:0]O;
+mul uut(
+.I1(I1),
+.I2(I2),
+.I3(I3),
+.I4(I4),
+.I5(I5),
+.I6(I6),
+.I7(I7),
+.I8(I8),
+.I9(I9),
+.I10(I10),
+.I11(I11),
+.I12(I12),
+.I13(I13),
+.I14(I14),
+.I15(I15),
+.I16(I16),
+.O(O),
+.S(S));
 initial begin
     $dumpfile("test.vcd");
     $dumpvars(0,mul_tb);
-    I1=4'b0001;
-    I2=4'b0011;
-    I3=4'b0111;
-    I4=4'b1111;
+   O=4'b1111;
     S=2'b00;
     #40;
     S=2'b01;
@@ -22,6 +37,6 @@ initial begin
     $finish;
 end
 initial begin
-    $monitor("I1=%4b, I2=%4b, I3=%4b, I4=%4b || S=%2b ||| O=%4b",I1,I2,I3,I4,S,O);
+    $monitor("I1=%4b, I2=%4b, I3=%4b, I4=%4b || S=%2b ||| O=%4b",I1,I2,I3,I4,S,O);//and much more
 end
 endmodule

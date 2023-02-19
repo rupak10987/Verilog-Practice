@@ -1,5 +1,5 @@
 $date
-	Wed Oct 26 20:49:47 2022
+	Fri Nov 11 10:33:31 2022
 $end
 $version
 	Icarus Verilog
@@ -8,30 +8,30 @@ $timescale
 	1ps
 $end
 $scope module DFF_tb $end
-$var wire 8 ! q [7:0] $end
+$var wire 30 ! q [29:0] $end
 $var parameter 32 " N $end
 $var reg 1 # clk $end
-$var reg 8 $ d [7:0] $end
+$var reg 30 $ d [29:0] $end
 $var reg 1 % en $end
 $var reg 1 & reset $end
 $scope module uut $end
 $var wire 1 # clk $end
-$var wire 8 ' d [7:0] $end
+$var wire 30 ' d [29:0] $end
 $var wire 1 % en $end
 $var wire 1 & reset $end
 $var parameter 32 ( N $end
 $var parameter 33 ) N1 $end
-$var reg 8 * q [7:0] $end
-$var reg 8 + r_next [7:0] $end
-$var reg 8 , r_reg [7:0] $end
+$var reg 30 * q [29:0] $end
+$var reg 30 + r_next [29:0] $end
+$var reg 30 , r_reg [29:0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 $comment Show the parameter values. $end
 $dumpall
-b111 )
-b1000 (
-b1000 "
+b11101 )
+b11110 (
+b11110 "
 $end
 #0
 $dumpvars
@@ -46,30 +46,27 @@ b1111 $
 bx !
 $end
 #20000
-b1111 !
-b1111 *
-b1111 ,
+b0 !
+b0 *
+b0 ,
 1#
 #40000
 b110011 +
+0#
 b110011 $
 b110011 '
-0#
 #60000
-b110011 !
-b110011 *
-b110011 ,
 1#
 #80000
 b1110000 +
-b0 !
-b0 *
+0#
 b1110000 $
 b1110000 '
-b0 ,
-0#
 1&
 #100000
+b1110000 !
+b1110000 *
+b1110000 ,
 1#
 #120000
 0#

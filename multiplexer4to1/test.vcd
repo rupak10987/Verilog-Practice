@@ -1,5 +1,5 @@
 $date
-	Wed Oct 26 09:12:21 2022
+	Fri Nov 11 09:59:25 2022
 $end
 $version
 	Icarus Verilog
@@ -8,19 +8,43 @@ $timescale
 	1ps
 $end
 $scope module mul_tb $end
-$var wire 4 ! O [3:0] $end
-$var reg 4 " I1 [3:0] $end
-$var reg 4 # I2 [3:0] $end
-$var reg 4 $ I3 [3:0] $end
-$var reg 4 % I4 [3:0] $end
-$var reg 2 & S [1:0] $end
-$scope module uut $end
-$var wire 4 ' I1 [3:0] $end
+$var wire 4 ! I9 [3:0] $end
+$var wire 4 " I8 [3:0] $end
+$var wire 4 # I7 [3:0] $end
+$var wire 4 $ I6 [3:0] $end
+$var wire 4 % I5 [3:0] $end
+$var wire 4 & I4 [3:0] $end
+$var wire 4 ' I3 [3:0] $end
 $var wire 4 ( I2 [3:0] $end
-$var wire 4 ) I3 [3:0] $end
-$var wire 4 * I4 [3:0] $end
-$var wire 2 + S [1:0] $end
-$var wire 4 , O [3:0] $end
+$var wire 4 ) I16 [3:0] $end
+$var wire 4 * I15 [3:0] $end
+$var wire 4 + I14 [3:0] $end
+$var wire 4 , I13 [3:0] $end
+$var wire 4 - I12 [3:0] $end
+$var wire 4 . I11 [3:0] $end
+$var wire 4 / I10 [3:0] $end
+$var wire 4 0 I1 [3:0] $end
+$var reg 4 1 O [3:0] $end
+$var reg 4 2 S [3:0] $end
+$scope module uut $end
+$var wire 4 3 O [3:0] $end
+$var wire 4 4 S [3:0] $end
+$var reg 4 5 I1 [3:0] $end
+$var reg 4 6 I10 [3:0] $end
+$var reg 4 7 I11 [3:0] $end
+$var reg 4 8 I12 [3:0] $end
+$var reg 4 9 I13 [3:0] $end
+$var reg 4 : I14 [3:0] $end
+$var reg 4 ; I15 [3:0] $end
+$var reg 4 < I16 [3:0] $end
+$var reg 4 = I2 [3:0] $end
+$var reg 4 > I3 [3:0] $end
+$var reg 4 ? I4 [3:0] $end
+$var reg 4 @ I5 [3:0] $end
+$var reg 4 A I6 [3:0] $end
+$var reg 4 B I7 [3:0] $end
+$var reg 4 C I8 [3:0] $end
+$var reg 4 D I9 [3:0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -29,32 +53,56 @@ $dumpall
 $end
 #0
 $dumpvars
-b1 ,
-b0 +
-b1111 *
-b111 )
-b11 (
-b1 '
-b0 &
-b1111 %
-b111 $
-b11 #
-b1 "
-b1 !
+bx D
+bx C
+bx B
+bx A
+bx @
+bx ?
+bx >
+bx =
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+b1111 5
+b0 4
+b1111 3
+b0 2
+b1111 1
+b1111 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+bx *
+bx )
+bx (
+bx '
+bx &
+bx %
+bx $
+bx #
+bx "
+bx !
 $end
 #40000
-b11 !
-b11 ,
-b1 &
-b1 +
+b1111 (
+b1111 =
+b1 2
+b1 4
 #80000
-b111 !
-b111 ,
-b10 &
-b10 +
+b1111 '
+b1111 >
+b10 2
+b10 4
 #120000
-b1111 !
-b1111 ,
-b11 &
-b11 +
+b1111 &
+b1111 ?
+b11 2
+b11 4
 #160000

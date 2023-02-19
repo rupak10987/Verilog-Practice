@@ -1,18 +1,18 @@
 `timescale 1ns/1ps
 module p_encoder_case_tb;
-reg [3:0]A;
+reg [7:0]A;
 wire[2:0]O;
 p_encoder_case uut(A,O);
 initial begin
-    A=4'b0000;
+    A=4'b00000000;
     #40;
-    A=4'b0001;
+    A=4'b00000001;
     #40;
-    A=4'b0010;
+    A=4'b00000010;
     #40;
-    A=4'b0100;
+    A=4'b00000100;
     #40;
-    A=4'b1100;
+    A=4'b00001100;
     #40;
     $finish;
 end
